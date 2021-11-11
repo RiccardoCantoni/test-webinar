@@ -19,5 +19,8 @@ jobs:
       - test
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
     - shell: bash
-      run: ls
+      run: cp -R ./src/ ./environments/prod
