@@ -1,1 +1,0 @@
-cp -R ./src ./environments/prod

@@ -20,4 +20,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - shell: bash
-      run: cp -R src/ environments/prod | echo
+      run: ls
