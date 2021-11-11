@@ -20,4 +20,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - shell: bash
-      run: ./build-scripts/prod.sh
+      run: cp -R ./src/ ./environments/prod
