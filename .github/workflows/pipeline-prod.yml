@@ -23,4 +23,4 @@ jobs:
       with:
         fetch-depth: 0
     - shell: bash
-      run: cp -R ./src/ ./environments/prod
+      run: cp -R ./src/ ./environments/prod/
