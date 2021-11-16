@@ -5,6 +5,6 @@ function post(url, body) {
   })
 }
 
-module.exports = { 
-  post
+module.exports = {
+  post 
 }
