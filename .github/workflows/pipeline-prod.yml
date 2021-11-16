@@ -39,13 +39,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-      with:
-        token: ${{ secrets.TOKEN }}
     - shell: bash
       run: |
         cp -R ./src/* ./environments/prod/
-        git config user.name github-actions
-        git config user.email github-actions@github.com
+        git config user.name RiccardoCantoni
+        git config user.email ricc.cantoni@gmail.com
         git add .
         git commit -m "deploy"
         git push
