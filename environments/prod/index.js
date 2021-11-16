@@ -13,4 +13,4 @@ async function newVisit(timestamp, lang) {
   }
 }
 
-module.exports = subtraction
+module.exports = newVisit
