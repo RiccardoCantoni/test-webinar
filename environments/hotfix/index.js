@@ -6,6 +6,7 @@ async function newVisit(timestamp, lang) {
       'https://www.fantozziefigli.com/services/new-visit',
       { timestamp, lang }
     )
+    console.log('res.success', res.success)
     return res.success
   } catch (e) {
     console.error(e)
