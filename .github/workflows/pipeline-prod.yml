@@ -49,11 +49,3 @@ jobs:
         git add .
         git commit -m "deploy [skip ci]"
         git push
-        git checkout origin/hotfix
-        git merge origin/master
-        git commit -m "merge-back to hotfix"
-        git push
-        git checkout origin/shared
-        git merge origin/master
-        git commit -m "merge-back to shared"
-        git push
