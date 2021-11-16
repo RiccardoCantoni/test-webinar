@@ -8,7 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        token: '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'
+        token: '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'
     - name: Use Node.js
       uses: actions/setup-node@v1
       with:
