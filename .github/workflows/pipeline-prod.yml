@@ -13,12 +13,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '14.x'
-    - name: Install dependences
-      run: npm install
-      shell: bash
-    - name: Run linter
-      run: npm run lint
-      shell: bash
+    - shell: bash
+      run: |
+        npm install
+        npm run lint
   test:
     needs: 
       - lint
@@ -31,12 +29,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: '14.x'
-    - name: Install dependences
-      run: npm install
-      shell: bash
-    - name: Run tests
-      run: npm run test
-      shell: bash
+    - shell: bash
+      run: |
+        npm install
+        npm run test
   build:
     needs: 
       - test
