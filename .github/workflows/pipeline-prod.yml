@@ -51,9 +51,9 @@ jobs:
         git push
         git checkout hotfix
         git merge origin/master
-        git commit -m "merge-back"
+        git commit -m "merge-back to hotfix"
         git push
         git checkout shared
         git merge origin/master
-        git commit -m "merge-back"
+        git commit -m "merge-back to shared"
         git push
